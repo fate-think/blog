@@ -1,8 +1,8 @@
-baseURL = "http://192.168.0.120:1313/"
-languageCode = "en"
+baseURL = "https://leisure.pages.dev"
+languageCode = "zh-tw"
 title = "小蚂蚁的乐园"
 theme = "hugo-theme-monochrome"
-defaultContentLanguage = "en"
+defaultContentLanguage = "zh-tw"
 enableEmoji = true
 paginate = 5
 
