@@ -1,0 +1,3 @@
+title = '小蚂蚁的乐园'
+theme = "hugo-theme-monochrome"
+baseURL = 'http://example.org/'

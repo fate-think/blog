@@ -1,0 +1,15 @@
+baseURL = "http://192.168.0.120:1313/"
+languageCode = "en"
+title = "小蚂蚁的乐园"
+theme = "hugo-theme-monochrome"
+defaultContentLanguage = "en"
+enableEmoji = true
+paginate = 5
+
+[taxonomies]
+category = "categories"
+tag = "tags"
+series = "series"
+
+[outputs]
+home = ["HTML", "RSS", "JSON"]
