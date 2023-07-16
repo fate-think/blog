@@ -7,7 +7,7 @@ draft: false
 解决 每次重启lxc需要重新执行许多指令的问题
 <!--more-->
 
-## <font color=#66CC66>  一 挂载cgroup </font>
+## <font color=#66CC66> 【 一 】挂载cgroup </font>
 把挂载cgroup的两行命令，丢termux的.bashrc里，具体操作如下
 ```
 $ apt install nano
@@ -24,7 +24,7 @@ sudo lxc-setup-cgroups
 &nbsp; 
 
 
-## <font color=#66CC66>  二 lxc里的docker网络配置 </font>
+## <font color=#66CC66> 【 二 】lxc里的docker网络配置 </font>
 lxc运行docker前的那些网络配置，
 每次重新进lxc，
 那些步骤都需要重新做一遍才行，
@@ -57,7 +57,7 @@ nano /etc/rc.local
 bash /root/docker-net.sh
 ```
 
-## <font color=#66CC66>  三 lxc普通用户sudo修复 </font>
+## <font color=#66CC66> 【 三 】lxc普通用户sudo修复 </font>
 lxc普通用户不能用sudo 问题，
 也是需要每次进lxc 执行1次命令 来解决，
 加到 /etc/rc.local 里，让它每次自动执行，

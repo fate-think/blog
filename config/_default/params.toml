@@ -1,6 +1,6 @@
-navbar_title = 'Monochrome'
-footer = "Copyright © 2021-2022 by kaiiiz"
-author = "kaiiiz"
+navbar_title = '小蚂蚁的乐园'
+footer = ""
+author = ""
 
 enable_zooming_js = true
 enable_toc = true
