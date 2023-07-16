@@ -1,7 +1,7 @@
 [[navbar]]
   identifier = "posts"
-  name = "文章"
-  url = "/zh-tw/posts/"
+  name = "文章列表"
+  url = "/posts/"
   weight = 1
 
 
