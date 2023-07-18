@@ -1,5 +1,4 @@
 title = '小蚂蚁的乐园'
 theme = "hugo-theme-monochrome"
 baseURL = 'https://purpleleaf.top/'
-timeZone = "Asia/Shanghai"
 buildFuture = true

@@ -1,6 +1,6 @@
 ---
 title: "Lxc教程V9"
-date: 2023-07-16T06:50:42Z
+date: 2023-07-18T17:30:42Z
 draft: false
 ---
 
@@ -114,12 +114,12 @@ mt管理器，打开
 这个文件，把root和ubuntu用户后的密码改一下，改为这个加密密码
 paa5KD6arxLr2
 [ 具体细节 ]
-修改密码，就是修改用户名后 2个:之间的内容
-修改前
-root:*:19525:0:99999:7:::
-ubuntu:!:19525:0:99999:7:::
-修改后
-root:paa5KD6arxLr2:19525:0:99999:7:::
+修改密码，就是修改用户名后 2个:之间的内容<br>
+修改前 <br>
+root:*:19525:0:99999:7::: <br>
+ubuntu:!:19525:0:99999:7::: <br>
+修改后 <br>
+root:paa5KD6arxLr2:19525:0:99999:7::: <br>
 ubuntu:paa5KD6arxLr2:19525:0:99999:7:::
 
 
@@ -128,7 +128,7 @@ ubuntu:paa5KD6arxLr2:19525:0:99999:7:::
 $ lxc-start -n ubuntu -d -F
 ```
 
-输入用户名 和 密码
+输入用户名 和 密码 <br>
 root和ubuntu的密码都是123456
 
 建议root用户登录
@@ -148,8 +148,8 @@ $ sudo passwd root
 可以修改root用户密码
 
 ( 2 )
-更换为清华大学源
-ubuntu22.04更换清华大学源
+更换为清华大学源 <br>
+ubuntu22.04更换清华大学源 <br>
 共4条命令
 ```
 $ echo "deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu-ports/ jammy main restricted universe multiverse" > /etc/apt/sources.list
@@ -166,8 +166,8 @@ $ echo "deb http://ports.ubuntu.com/ubuntu-ports/ jammy-security main restricted
 ```
 $ echo "nameserver 8.8.8.8" > /etc/resolv.conf
 ```
-但是这个文件会自动重置，也就是说安卓lxc有一个dns会自动重置的问题，
-解决办法 在这篇文章末尾
+但是这个文件会自动重置，也就是说安卓lxc有一个dns会自动重置的问题 <br>
+解决办法 在这篇文章末尾 <br>
 [ 关于安卓lxc容器dns自动重置的
 解决办法 ] 
 
@@ -176,8 +176,8 @@ $ echo "nameserver 8.8.8.8" > /etc/resolv.conf
 $ apt update
 ```
 
-如果做了以上操作，
-apt update 还是没有网络的话，
+如果做了以上操作，<br>
+apt update 还是没有网络的话,<br>
 执行以下2条命令 
 - 执行第1条命令可能提示 aid_inet已经存在，那就执行第2条命令即可
 ```
@@ -201,10 +201,10 @@ $ apt install openssh-server
 ```
 $ nano /etc/ssh/sshd_config
 ```
-找到并用#注释掉这行
-PermitRootLogin prohibit-password
-然后在它下面1行添加
-PermitRootLogin yes
+找到并用#注释掉这行 <br>
+PermitRootLogin prohibit-password <br>
+然后在它下面1行添加 <br>
+PermitRootLogin yes <br>
 重启sshd服务
 ```
 $ systemctl restart sshd
@@ -273,11 +273,11 @@ iptables -t filter -F
 $ iptables -t filter -X
 ```
 
-[ 重点 ]docker镜像运行失败修复
-先下载文件runc-arm64.zip，
-[下载点这里](https://redblue.lanzouk.com/iENa411tn8qj)
-下载以后，解压，
-把里面的 runc 文件替换到
+[ 重点 ]docker镜像运行失败修复<br>
+先下载文件runc-arm64.zip，<br>
+[下载点这里](https://redblue.lanzouk.com/iENa411tn8qj) <br>
+下载以后，解压，<br>
+把里面的 runc 文件替换到 <br>
 /data/data/com.termux/files/usr/var/lib/lxc/ubuntu/rootfs/usr/bin/ 下面
 
 &nbsp;
@@ -285,15 +285,15 @@ $ iptables -t filter -X
 
 
 ## <font color=#66CC66> 【 七 】dns重置问题 </font>
-关于安卓lxc容器dns自动重置的
+关于安卓lxc容器dns自动重置的<br>
 解决办法V3
 
-具体描述:
-解决重启lxc会重置dns的问题
+具体描述:<br>
+解决重启lxc会重置dns的问题<br>
 解决一些docker操作会 重置dns的问题
 
 《 一 》
-如果你只是想，这一次解决当下容器问题
+如果你只是想，这一次解决当下容器问题<br>
 那么手动在容器里执行，
 ```
 $ echo "nameserver 8.8.8.8" > /etc/resolv.conf
@@ -302,10 +302,11 @@ $ systemctl disable systemd-resolved
 ```
 
 《 二 》
-如果你想永久解决问题，那么进行以下操作
-(设置一次，永久有效
-重启lxc也不需要 再次操作)
-( 1 )
+如果你想永久解决问题，那么进行以下操作<br>
+- 设置一次，永久有效
+- 重启lxc也不需要 再次操作 <br>
+
+( 1 ) <br>
 修复rc.local (修复显示condition failed)
 ```
 $ chmod +x rc.local
@@ -423,7 +424,7 @@ usermod -g aid_inet 用户名
 ```
 $ sudo chroot $PREFIX/var/lib/lxc/容器名/rootfs bin/passwd
 ```
-按提示
-输入密码 回车
-再次输入密码 回车
+按提示<br>
+输入密码 回车<br>
+再次输入密码 回车<br>
 即可!
