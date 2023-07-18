@@ -112,9 +112,9 @@ mt管理器，打开
 /data/data/com.termux/files/usr/var/lib/lxc/ubuntu/rootfs/etc/shadow
 ```
 这个文件，把root和ubuntu用户后的密码改一下，改为这个加密密码
-paa5KD6arxLr2
-[ 具体细节 ]
-修改密码，就是修改用户名后 2个:之间的内容<br>
+paa5KD6arxLr2 <br>
+[ 具体细节 ] <br>
+修改密码，就是修改用户名后 2个:之间的内容 <br>
 修改前 <br>
 root:*:19525:0:99999:7::: <br>
 ubuntu:!:19525:0:99999:7::: <br>
@@ -139,8 +139,8 @@ root和ubuntu的密码都是123456
 
 ## <font color=#66CC66> 【 五 】ubuntu系统后续配置 </font>
 
-进入ubuntu系统以后，
-( 1 )
+进入ubuntu系统以后， <br>
+( 1 ) <br>
 执行
 ```
 $ sudo passwd root
