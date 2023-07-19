@@ -5,7 +5,6 @@ theme = "hugo-theme-monochrome"
 defaultContentLanguage = "zh-tw"
 enableEmoji = true
 paginate = 5
-google-site-verification = true
 
 [taxonomies]
 category = "categories"
