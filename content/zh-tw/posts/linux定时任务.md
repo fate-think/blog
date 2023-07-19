@@ -1,5 +1,10 @@
 ---
 title: "Linux定时任务"
+keywords:
+- 定时任务
+- crontab
+- linux
+description: "linux定时执行脚本，以ubuntu系统为例"
 date: 2023-07-17T10:19:11Z
 draft: false
 ---

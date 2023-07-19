@@ -2,3 +2,6 @@ title = '小蚂蚁的乐园'
 theme = "hugo-theme-monochrome"
 baseURL = 'https://purpleleaf.top/'
 buildFuture = true
+
+[params]
+description = "小蚂蚁的个人博客,linux,termux,docker,哲学思考，生活感悟"

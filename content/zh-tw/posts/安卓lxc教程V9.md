@@ -1,5 +1,9 @@
 ---
-title: "Lxc教程V9"
+title: "安卓Lxc教程V9"
+keywords:
+- 安卓
+- lxc
+description: "安卓系统上运行lxc教程"
 date: 2023-07-18T17:30:42Z
 draft: false
 ---

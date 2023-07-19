@@ -1,5 +1,11 @@
 ---
-title: "Termux定时任务"
+title: "termux定时任务"
+keywords:
+- termux
+- 定时任务
+- 自动运行
+- crontab
+description: "安卓手机用termux定时执行脚本，实现一些自动化部署"
 date: 2023-07-17T15:37:23Z
 draft: false
 ---

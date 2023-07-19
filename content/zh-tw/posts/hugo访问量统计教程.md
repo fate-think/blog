@@ -1,5 +1,9 @@
 ---
 title: "hugo访问量统计教程"
+keywords:
+- statistics
+- hugo
+description: "hugo博客页脚添加网站访问次数和访问人数"
 date: 2023-07-19T01:29:36Z
 draft: false
 ---
