@@ -8,6 +8,8 @@ date: 2023-07-20T22:45:42Z
 draft: false
 ---
 
+lxc在安卓系统上单独运行
+<!--more-->
 ## <font color=#66CC66>【 一 】 前期准备 </font>
 ( 1 ) <br>
 mt管理器，进入手机目录/data，<br>
