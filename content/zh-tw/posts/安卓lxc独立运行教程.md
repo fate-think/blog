@@ -99,7 +99,7 @@ $ source env.sh
 $ lxc-create -t download -n ubuntu -- --server mirrors.tuna.tsinghua.edu.cn/lxc-images
 ```
 
-依次输入<br>
+以 ubuntu 23.04 为例,依次输入<br>
 ubuntu <br>
 lunar <br>
 arm64 <br>
