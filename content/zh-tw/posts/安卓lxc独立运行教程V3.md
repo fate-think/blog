@@ -11,7 +11,7 @@ draft: false
 lxc在安卓系统上单独运行
 <!--more-->
 日期 2023年07月21日 <br>
-时间 00:58
+时间 01:44
 
 by redblue(弗朗西斯科)
 
@@ -71,6 +71,15 @@ $ sed -i 's/lxc\.net\.0\.type = empty/lxc.net.0.type = none/g' /data/lxc/etc/lxc
 ( 可能需要每次都执行,如果在termux里可以在每个命令前加sudo，放.bashrc里每次自动执行) 
 ```
 mount -t tmpfs -o mode=755 tmpfs /sys/fs/cgroup && mkdir -p /sys/fs/cgroup/devices && mount -t cgroup -o devices cgroup /sys/fs/cgroup/devices && mkdir -p /sys/fs/cgroup/systemd && mount -t cgroup cgroup -o none,name=systemd /sys/fs/cgroup/systemd
+```
+
+或者 <br>
+建议直接去termux里，执行
+```
+$ pkg install root-repo 
+$ pkg install tsu lxc
+$ sudo mount -t tmpfs -o mode=755 tmpfs /sys/fs/cgroup && sudo mkdir -p /sys/fs/cgroup/devices && sudo mount -t cgroup -o devices cgroup /sys/fs/cgroup/devices && sudo mkdir -p /sys/fs/cgroup/systemd && sudo mount -t cgroup cgroup -o none,name=systemd /sys/fs/cgroup/systemd
+$ sudo lxc-setup-cgroups
 ```
 
 &nbsp; 
