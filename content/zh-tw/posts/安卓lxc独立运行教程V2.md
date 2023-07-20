@@ -1,5 +1,5 @@
 ---
-title: "安卓Lxc独立运行教程"
+title: "安卓Lxc独立运行教程V2"
 keywords:
 - lxc
 - 安卓
@@ -224,4 +224,35 @@ date
 
 ## <font color=#66CC66>【 四 】 lxc里的docker 运行 </font>
 > 参考 [安卓Lxc教程V9](https://purpleleaf.top/posts/安卓lxc教程v9/) 的以下章节 : <br>
-【 六 】lxc里运行docker 
+【 六 】lxc里运行docker
+
+
+&nbsp;
+
+
+## <font color=#66CC66>【 五 】 常用命令 </font>
+> 这里记录一些常用命令
+
+( 1 ) <br>
+lxc容器后台运行
+```
+lxc-start -n ubuntu -d
+```
+然后就可以ssh连接了
+
+( 2 ) <br>
+停止lxc容器
+```
+lxc-stop -n ubuntu
+```
+
+也可以这样停止容器
+```
+$ su
+$ /data/lxc/bin/lxc-stop -n ubuntu
+```
+
+termux里 可以这样停止容器
+```
+sudo /data/lxc/bin/lxc-stop -n ubuntu
+```
