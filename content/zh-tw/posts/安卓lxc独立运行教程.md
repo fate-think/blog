@@ -10,6 +10,11 @@ draft: false
 
 lxc在安卓系统上单独运行
 <!--more-->
+日期 2023年07月20日 <br>
+时间 23:12
+
+by redblue(弗朗西斯科)
+
 ## <font color=#66CC66>【 一 】 前期准备 </font>
 ( 1 ) <br>
 mt管理器，进入手机目录/data，<br>
@@ -61,6 +66,7 @@ $ echo "lxc.init.cmd = /sbin/init systemd.unified_cgroup_hierarchy=0" >> /data/l
 $ sed -i 's/lxc\.net\.0\.type = empty/lxc.net.0.type = none/g' /data/lxc/etc/lxc/default.conf
 ```
 
+&nbsp; 
 
 ## <font color=#66CC66>【 二 】 创建和启动 lxc容器 </font>
 接下来，你可以选择自己喜欢的app进行操作，<br>
@@ -143,7 +149,7 @@ apt update
 发现成功了
 
 
-
+&nbsp; 
 
 ## <font color=#66CC66>【 三 】 ubuntu后续使用 </font>
 ( 1 ) 更换为清华大学源 可选<br>
@@ -211,6 +217,8 @@ date
 ```
 发现时间自动校正了
 
+
+&nbsp; 
 
 ## <font color=#66CC66>【 四 】 lxc里的docker 运行 </font>
 > 参考 [安卓Lxc教程V9](https://purpleleaf.top/posts/安卓lxc教程v9/) 的以下章节 : <br>

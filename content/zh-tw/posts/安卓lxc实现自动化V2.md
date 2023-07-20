@@ -1,5 +1,5 @@
 ---                                           
-title: "安卓lxc实现自动化V2"                                
+title: "安卓Lxc实现自动化V2"                                
 date: 2023-07-18T17:31:13Z                    
 draft: false                                  
 ---
