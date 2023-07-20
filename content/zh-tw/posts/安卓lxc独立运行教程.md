@@ -15,6 +15,8 @@ lxc在安卓系统上单独运行
 
 by redblue(弗朗西斯科)
 
+&nbsp; 
+
 ## <font color=#66CC66>【 一 】 前期准备 </font>
 ( 1 ) <br>
 mt管理器，进入手机目录/data，<br>
