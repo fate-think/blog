@@ -17,7 +17,7 @@ mt管理器，进入手机目录/data，<br>
 
 下载 秋秋 静态编译的 lxc文件，<br>
 原下载地址 (下载后不用改名) <br>
-[点这里](https://qiuqiu233.top/d/linux-deploy/lxc/lxcnew.tar.gz)
+[点这里](https://qiuqiu233.top/d/linux-deploy/lxc/lxcnew.tar.gz) <br>
 备用地址 (下载以后把后缀名.zip 删掉) <br>
 [点这里](https://redblue.lanzouk.com/iBUKk131g9ef)
 
