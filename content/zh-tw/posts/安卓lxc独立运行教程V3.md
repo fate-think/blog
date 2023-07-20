@@ -1,5 +1,5 @@
 ---
-title: "安卓Lxc独立运行教程V2"
+title: "安卓Lxc独立运行教程V3"
 keywords:
 - lxc
 - 安卓
@@ -11,7 +11,7 @@ draft: false
 lxc在安卓系统上单独运行
 <!--more-->
 日期 2023年07月21日 <br>
-时间 00:11
+时间 00:58
 
 by redblue(弗朗西斯科)
 
@@ -51,21 +51,26 @@ $ mount | grep cgroup1
 
 如果你是cgroup1版本，执行 (执行1次即可，以后每次启动 无需再次执行)
 ```
-$ echo "lxc.init.cmd = /sbin/init systemd.unified_cgroup_hierarchy" >>; /$PREFIX/share/lxc/config/common.conf
+$ echo "lxc.init.cmd = /sbin/init systemd.unified_cgroup_hierarchy" >>; /data/lxc/share/lxc/config/common.conf
 ```
 如果你是cgroup2版本 执行 (执行1次即可，以后每次启动 无需再次执行)
 ```
-$ echo "lxc.init.cmd = /sbin/init systemd.unified_cgroup_hierarchy=0" >> /$PREFIX/share/lxc/config/common.conf
+$ echo "lxc.init.cmd = /sbin/init systemd.unified_cgroup_hierarchy=0" >> /data/lxc/share/lxc/config/common.conf
 ```
 
 ( 3 ) <br>
-完成 cgroup和网络的一些设置<br>
+网络设置<br>
 ( cgroup1 和cgroup2都要执行 ) <br>
 ( 共2条命令，只需要执行 1 次 ) <br>
 ```
-$ echo "lxc.init.cmd = /sbin/init systemd.unified_cgroup_hierarchy=0" >> /data/lxc/share/lxc/config/common.conf
-
 $ sed -i 's/lxc\.net\.0\.type = empty/lxc.net.0.type = none/g' /data/lxc/etc/lxc/default.conf
+```
+
+( 4 ) <br>
+挂载cgroup
+( 可能需要每次都执行,如果在termux里可以在每个命令前加sudo，放.bashrc里每次自动执行) 
+```
+mount -t tmpfs -o mode=755 tmpfs /sys/fs/cgroup && mkdir -p /sys/fs/cgroup/devices && mount -t cgroup -o devices cgroup /sys/fs/cgroup/devices && mkdir -p /sys/fs/cgroup/systemd && mount -t cgroup cgroup -o none,name=systemd /sys/fs/cgroup/systemd
 ```
 
 &nbsp; 
