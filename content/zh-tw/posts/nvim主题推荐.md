@@ -4,7 +4,11 @@ date: 2023-05-26T17:25:08+08:00
 draft: false
 ---
 
-# neovim主题推荐
+一些个人挑选的neovim主题
+<!--more-->
+
+&nbsp; 
+
 > 都是lua语言编写的主题
 
 - [tolyonight](https://github.com/folke/tokyonight.nvim)
