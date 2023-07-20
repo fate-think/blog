@@ -28,7 +28,7 @@ mt管理器，进入手机目录/data，<br>
 备用地址 (下载以后把后缀名.zip 删掉) <br>
 [点这里](https://redblue.lanzouk.com/iBUKk131g9ef)
 
-然后把 lxcnew.tar.gz文件复制到/data/lxc <br>
+然后把 lxcnew.tar.gz文件复制到/data/lxc, <br>
 打开mt管理器，点左上角 三条杠，<br>
 终端模拟器，如果是第一次使用，<br>
 等它初始化一下。<br>
