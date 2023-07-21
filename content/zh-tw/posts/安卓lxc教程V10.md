@@ -1,5 +1,5 @@
 ---
-title: "安卓Lxc教程V9"
+title: "安卓Lxc教程V10"
 keywords:
 - 安卓
 - lxc
@@ -11,8 +11,8 @@ draft: false
 安卓运行lxc + docker教程
 <!--more-->
 
-日期 2023年07月15日 <br>
-时间 12:08
+日期 2023年07月21日 <br>
+时间 12:59
 
 by redblue(弗朗西斯科)
 
@@ -431,4 +431,22 @@ $ sudo chroot $PREFIX/var/lib/lxc/容器名/rootfs bin/passwd
 按提示<br>
 输入密码 回车<br>
 再次输入密码 回车<br>
-即可!
+即可!  <br>
+
+( 2 ) <br>
+需要指定PUID PGID的docker镜像无法联网的问题  <br>
+
+有的docker镜像要指定id参数， <br>
+又不允许指定root用户的id,  <br>
+例如heimdall alist 这类docker镜像, <br>
+参数如下  <br>
+```
+-e PUID=1000 -e PGID=1000
+```
+但是这样指定普通用户id， <br>
+无法连接上，网络有问题  <br>
+
+解决办法是id指定为3003  <br>
+```
+-e PUID=3003 -e PGID=3003
+```
