@@ -66,7 +66,7 @@ lxc普通用户不能用sudo 问题，
 
 lxc容器里执行
 ```
-$ nano ~/.bashrc
+$ nano /etc/rc.local
 ```
 
 末尾添加1行

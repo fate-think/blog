@@ -311,9 +311,15 @@ $ systemctl disable systemd-resolved
 - 重启lxc也不需要 再次操作 <br>
 
 ( 1 ) <br>
+如果/etc目录下有rc.local文件，继续下一步 <br>
+如果没有rc.local文件，新建一个
+```
+mkdir -p /etc/rc.local
+```
+
 修复rc.local (修复显示condition failed)
 ```
-$ chmod +x rc.local
+$ chmod +x /etc/rc.local
 ```
 
 ( 2 )
@@ -361,9 +367,11 @@ nano rc-local.service
 ```
 
 在末尾空1行 ，再添加(一共3行)
+```
 [Install] 
 WantedBy=multi-user.target
 Alias=rc-local.service
+```
 
 重新执行
 ```
