@@ -61,7 +61,7 @@ $ echo "lxc.init.cmd = /sbin/init systemd.unified_cgroup_hierarchy=0" >> /data/l
 ( 3 ) <br>
 网络设置<br>
 ( cgroup1 和cgroup2都要执行 ) <br>
-( 共2条命令，只需要执行 1 次 ) <br>
+( 共1条命令，只需要执行 1 次 ) <br>
 ```
 $ sed -i 's/lxc\.net\.0\.type = empty/lxc.net.0.type = none/g' /data/lxc/etc/lxc/default.conf
 ```
@@ -237,7 +237,7 @@ date
 &nbsp; 
 
 ## <font color=#66CC66>【 四 】 lxc里的docker 运行 </font>
-> 参考 [安卓Lxc教程V9](https://purpleleaf.top/posts/安卓lxc教程v9/) 的以下章节 : <br>
+> 参考 [安卓Lxc教程V9](https://purpleleaf.top/posts/安卓lxc教程v10/) 的以下章节 : <br>
 【 六 】lxc里运行docker
 
 

@@ -250,7 +250,7 @@ $ sh get-docker.sh
 配置路由
 (以后每次重新启动lxc 都需要执行一次)
 ```
-$ pkg install iproute2
+$ apt install iproute2
 
 $ getway=$(sudo ip route get 8.8.8.8 | awk '{ for(i=1; i<=NF; i++) { if($i == "via") { print $(i+1); break; } } }')
 
@@ -314,7 +314,7 @@ $ systemctl disable systemd-resolved
 如果/etc目录下有rc.local文件，继续下一步 <br>
 如果没有rc.local文件，新建一个
 ```
-mkdir -p /etc/rc.local
+touch /etc/rc.local
 ```
 
 修复rc.local (修复显示condition failed)
