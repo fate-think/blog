@@ -20,7 +20,7 @@ hugo添加访问量统计教程 <br>
 ## <font color=#66CC66> 〖 一 〗 改head.html </font>
 博客主目录下，<br>
 找到`themes/hugo-theme-monochrome/layouts/partials/`目录下的`head.html`，<br>
-在</head>前添加以下代码(共2行)
+在`</head>`前添加以下代码(共2行)
 ```
 <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js">
 </script>
@@ -31,7 +31,7 @@ hugo添加访问量统计教程 <br>
 ## <font color=#66CC66> 〖 二 〗 改footer.html </font>
 博客主目录下，<br>
 找到`themes/hugo-theme-monochrome/layouts/partials/`目录下的`footer.html`，<br>
-在</footer>前添加以下代码 (一共8行)
+在`</footer>`前添加以下代码 (一共8行)
 ```
 <div class="busuanzi-footer">
 <span id="busuanzi_container_site_pv">
