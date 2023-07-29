@@ -68,8 +68,10 @@ python_3.12.0b4_arm64.tar.gz
 
 ## <font color=#66CC66>使用方法</font>
 安装必要依赖
+- 这个软件，系统一般是自带的，安好以后注意看看版本`openssl version`，我们需要的是最新的3.x版本
+
 ```
-apt install libssl-dev
+apt install openssl
 ```
 
 新建专用文件夹
