@@ -29,11 +29,15 @@ cd /data/lxc/lib/lxc/arch
 ```
 打包并压缩文件夹下的内容
 ```
-tar -zcvf ../archback.tar.gz ./
+tar -zcvf ../arch-backup.tar.gz .
 ```
 或者
 ```
-tar -zcvf ../archback.tar.gz * .*
+tar -zcvf ../arch-backup.tar.gz ./
+```
+或者
+```
+tar -zcvf ../arch-backup.tar.gz * .*
 ```
 
 <br>
@@ -42,7 +46,7 @@ tar -zcvf ../archback.tar.gz * .*
 不然一会我们删除容器可能被清除<br>
 你也可以移动到 其它路径
 ```
-mv ../archback.tar.gz /data/lxc/
+mv ../arch-backup.tar.gz /data/lxc/
 ```
 
 &nbsp; 
@@ -70,15 +74,15 @@ lxc-ls
 mkdir -p /data/lxc/lib/lxc/arch
 ```
 
-把备份的archback.tar.gz移动进去，并解压
+把备份的arch-backup.tar.gz移动进去，并解压
 ```
-mv /data/lxc/archback.tar.gz /data/lxc/lib/lxc/arch/
+mv /data/lxc/arch-backup.tar.gz /data/lxc/lib/lxc/arch/
 ```
 ```
 cd /data/lxc/lib/lxc/arch
 ```
 ```
-tar -xvf archback.tar.gz
+tar -xvf arch-backup.tar.gz
 ```
 
 查看是否多个一个arch容器
