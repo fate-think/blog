@@ -4,14 +4,14 @@ keywords:
 - lxc
 - 备份
 description: "关于安卓 Lxc 容器的备份和恢复"
-date: 2023-07-20T22:45:42Z
+date: 2023-08-11T17:13:36Z
 draft: false
 ---
 
 lxc备份教程<br>
 <!--more-->
 lxc备份演示<br>
-以我的arch容器为例
+以我的arch容器为例,你也可以直接备份/data/lxc目录，方法是一样的
 
 by redblue(弗朗西思科) <br>
 日期 2023年07月24日 <br>
@@ -29,7 +29,11 @@ cd /data/lxc/lib/lxc/arch
 ```
 打包并压缩文件夹下的内容
 ```
-tar -zcvf archback.tar.gz *
+tar -zcvf ../archback.tar.gz ./
+```
+或者
+```
+tar -zcvf ../archback.tar.gz * .*
 ```
 
 <br>
@@ -38,7 +42,7 @@ tar -zcvf archback.tar.gz *
 不然一会我们删除容器可能被清除<br>
 你也可以移动到 其它路径
 ```
-mv archback.tar.gz /data/lxc/
+mv ../archback.tar.gz /data/lxc/
 ```
 
 &nbsp; 
