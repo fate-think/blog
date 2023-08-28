@@ -3,7 +3,6 @@
     <link rel="shortcut icon" href='{{ "favicon.ico" | relURL }}' type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="google-site-verification" content="x4nvVjHiC4PyXCnJYOwNpn3FzZkmnRzxYPk8h3PiIAM" />
-    <meta name='description' itemprop="description" content="{{ if .Description }}{{ .Description }}{{ else }}{{if .IsPage}}{{substr .Summary 0 100}}{{ end }}{{ end }}">
     <title>
         {{- if eq .Kind "home" -}}
             {{- print .Site.Title -}}
@@ -13,6 +12,10 @@
             {{- print .Title " - " .Site.Title -}}
         {{- end -}}
     </title>
+
+    {{ with .Description }}
+    <meta name="description" content="{{ . }}" />
+    {{ end }}
 
     {{ with .Keywords }}
     <meta name="keywords" content="{{ delimit . "," }}" />

@@ -1,14 +1,13 @@
 ---
 title: "安卓 Lxc 备份教程"
 keywords:
-- lxc
-- 备份
-description: "关于安卓 Lxc 容器的备份和恢复"
+- 安卓lxc
+- lxc备份
+description: "关于安卓lxc容器的备份和恢复"
 date: 2023-08-11T17:13:36Z
 draft: false
 ---
-
-lxc备份教程<br>
+# 安卓lxc备份教程
 <!--more-->
 lxc备份演示<br>
 以我的arch容器为例,你也可以直接备份/data/lxc目录，方法是一样的

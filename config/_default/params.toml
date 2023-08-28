@@ -1,6 +1,7 @@
 navbar_title = '小蚂蚁的乐园'
 footer = "紫色树叶 hugo"
 author = ""
+description = "小蚂蚁的个人博客,linux,termux,docker,哲学思考，生活感悟"
 
 enable_zooming_js = true
 enable_toc = true
