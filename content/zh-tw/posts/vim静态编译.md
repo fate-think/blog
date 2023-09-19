@@ -9,10 +9,11 @@ draft: false
 ---
 
 # Vim静态编译
-开源一个小项目 <br>
-vim静态编译的action项目 <br>
-by 弗朗西斯科( redblue )
+开源一个小项目
 <!--more-->
+> vim静态编译的action项目
+
+by 弗朗西斯科( redblue )
 ## <font color=#66CC66>【 一 】细节描述</font>
 > 采用NDK交叉编译
 

@@ -36,7 +36,7 @@ tar -zcvf ../arch-backup.tar.gz ./
 ```
 或者
 ```
-tar -zcvf ../arch-backup.tar.gz * .*
+tar -zcvf ../arch-backup.tar.gz *.*
 ```
 
 <br>
